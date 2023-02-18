@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* main_color */
+
+:root {
+  --main-color:rgb(68, 10, 10);
+}
