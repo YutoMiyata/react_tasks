@@ -9,7 +9,7 @@ const Create = () => {
   const [name , setName] = useState('')
 
   const addTasks = () => {
-    axios.post('https://cafe-tasks-boards.com/api/',{
+    axios.post('https://cafe-tasks-boards.com/api/tasks/',{
       task_name:taskName,
       task_detail:taskContennt,
       name:name,
