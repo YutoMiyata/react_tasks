@@ -9,12 +9,11 @@ const Create = () => {
   const [name , setName] = useState('')
 
   const addTasks = () => {
-    axios.post('https://cafe-tasks-boards.com/',{
+    axios.post('https://cafe-tasks-boards.com/api/',{
       task_name:taskName,
       task_detail:taskContennt,
       name:name,
     },{headers: {
-
       'Content-Type': 'application/json',
     }})
      .then((res) => res.data);

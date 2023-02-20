@@ -6,7 +6,7 @@ import "./Main.css";
 const Main = () => {
    const [tasks , setTasks] = useState([])
    useEffect(() => {
-    axios.get(`https://cafe-tasks-boards.com/`)
+    axios.get(`https://cafe-tasks-boards.com/api/`)
      .then((res) => setTasks(res.data))
    })
    console.log(tasks)
