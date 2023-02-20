@@ -9,7 +9,6 @@ const Main = () => {
     axios.get(`https://cafe-tasks-boards.com/api/tasks/`)
      .then((res) => setTasks(res.data))
    })
-   console.log(tasks)
   return (
     <div>
       {tasks.map((task) => {
