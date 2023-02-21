@@ -17,10 +17,13 @@ const Create = () => {
       'Content-Type': 'application/json',
     }})
      .then((res) => res.data);
+     setTaskName('')
+     setTaskConntent('')
+     setName('')
   }
 
   return (
-    <div>
+    <div className='createTasks'>
       <h1>TASK 追加</h1>
       <div>
         <input 
